@@ -17,6 +17,7 @@ const App = () => {
   const [ProfileDetail,setProfileDetail]=useState();
 
   let AuthData=useContext(AuthContext);
+  console.log(AuthData)
 /*   AuthData=AuthData.userdata;
   AuthData.employees={...AuthData.employees}
   AuthData.admin={...AuthData.admin}
