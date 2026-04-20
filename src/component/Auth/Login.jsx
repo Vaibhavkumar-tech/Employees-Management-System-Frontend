@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 
-const Login = () => {
+const Login = ({LoginHandler}) => {
     const [email,setEmail]=useState("");
     const [password, setPassword] = useState("");
 
