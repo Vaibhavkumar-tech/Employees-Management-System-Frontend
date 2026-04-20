@@ -31,7 +31,7 @@ const CreateTask = () => {
         });
         console.log(employees.data);
 
-        await axios.put(`https://employees-management-system-backend.vercel.app/employees${id}`,updateEmployee);
+        await axios.put(`https://employees-management-system-backend.vercel.app/employees/${id}`,updateEmployee);
         window.location.reload(); 
         setNewtask(obj);
         setNew_task("");
