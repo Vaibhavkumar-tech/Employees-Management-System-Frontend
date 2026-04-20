@@ -77,32 +77,29 @@ useEffect(() => {
   };
 
 
+function LoginHandler(email, password) {
+  const admin = Object.values(AuthData?.userdata?.admin || {}).find(
+    (a) => email == a.email && password == a.password
+  );
 
-  function LoginHandler(email,password){
-
-    if(AuthData && Object.values(AuthData.userdata.admin).find((a)=>{
-      return email==a.email && password==a.password
-    })){
-      setUser("admin");
-       postAdmin(); 
-      setLoggedInUser(AuthData.userdata.admin);
-    }
-    else if (AuthData && Object.values(AuthData.userdata.employees).find((e)=>{
-     return email==e.email && password==e.password
-    })){
-      setUser("employee");
-      let employee=Object.values(AuthData.userdata.employees).find((e)=>{
-         if(email==e.email && password==e.password){
-          return e;
-         }
-       });
-       postEmployee(employee); 
-      setLoggedInUser(employee);
-    }
-    else{
-      alert("Invalid credentials");
-    }
+  if (admin) {
+    postAdmin();
+    setLoggedInUser(admin);
+    return;
   }
+
+  const employee = Object.values(AuthData?.userdata?.employees || {}).find(
+    (e) => email == e.email && password == e.password
+  );
+
+  if (employee) {
+    postEmployee(employee);
+    setLoggedInUser(employee);
+    return;
+  }
+
+  alert("Invalid credentials");
+}
      
 /* useEffect(() => {
    const data = localStorage.getItem("employees");
