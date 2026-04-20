@@ -79,18 +79,18 @@ useEffect(() => {
 
 
   const LoginHandler=((email,password)=>{
-    if(AuthData && Object.values(AuthData.userdata.admin).find((a)=>{
+    if(AuthData && Object.values(AuthData?.userdata?.admin || {}).find((a)=>{
       return email==a.email && password==a.password
     })){
       setUser("admin");
        postAdmin(); 
       setLoggedInUser(AuthData.userdata.admin);
     }
-    else if (AuthData && Object.values(AuthData.userdata.employees).find((e)=>{
+    else if (AuthData && Object.values(AuthData?.userdata?.employees || {}).find((e)=>{
      return email==e.email && password==e.password
     })){
       setUser("employee");
-      let employee=Object.values(AuthData.userdata.employees).find((e)=>{
+      let employee=Object.values(AuthData?.userdata?.employees || {}).find((e)=>{
          if(email==e.email && password==e.password){
           return e;
          }
