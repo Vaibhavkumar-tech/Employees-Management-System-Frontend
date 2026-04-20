@@ -2,10 +2,10 @@ import React from 'react'
 import axios from 'axios'
 
 const Header = ({data}) => {
-
+    console.log(data)
 
     async function UserLogOut(){
-        await axios.delete("http://localhost:3000/loggeduser");
+        await axios.delete("https://employees-management-system-backend.vercel.app/loggeduser");
         data.setUser(null);
     }
 
