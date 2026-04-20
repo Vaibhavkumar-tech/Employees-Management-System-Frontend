@@ -12,6 +12,7 @@ const AuthProvider = ({ children }) => {
       try {
         const Eresponse = await axios.get("https://employees-management-system-backend.vercel.app/employees");
         const Aresponse = await axios.get("https://employees-management-system-backend.vercel.app/admin");
+        console.log(Eresponse)
         const employees={...Eresponse.data};
         const admin={...Aresponse.data};
 
