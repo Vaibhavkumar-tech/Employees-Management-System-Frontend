@@ -1,4 +1,4 @@
-import React, { use, useEffect } from 'react'
+import React, { useEffect } from "react";
 import Login from './component/Auth/Login'
 import EmployeeDashboard from './component/Dashboard/EmployeeDashboard'
 import AdminDashboard from './component/Dashboard/AdminDashboard'
@@ -39,19 +39,22 @@ const App = () => {
   fetchLogin();
 }, []); */
 
-const fun = async () => {
-  const response = await axios.get("https://employees-management-system-backend.vercel.app/loggeduser");
+useEffect(() => {
+  const fun = async () => {
+    const response = await axios.get(
+      "https://employees-management-system-backend.vercel.app/loggeduser"
+    );
 
-  const LoggedInUser = response.data[0];
+    if (response.data.length > 0) {
+      const LoggedInUser = response.data[0];
 
-  if (LoggedInUser) {
-    setUser(LoggedInUser.role);
-    setLoggedInUser(LoggedInUser.data);
-  }
-};
+      setUser(LoggedInUser.role);
+      setLoggedInUser(LoggedInUser.data);
+    }
+  };
 
-fun();
-
+  fun();
+}, []);
 
 
   const postAdmin = async () => {
