@@ -10,8 +10,8 @@ const AuthProvider = ({ children }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const Eresponse = await axios.get("http://localhost:3000/employees");
-        const Aresponse = await axios.get("http://localhost:3000/admin");
+        const Eresponse = await axios.get("https://employees-management-system-backend.vercel.app/employees");
+        const Aresponse = await axios.get("https://employees-management-system-backend.vercel.app/admin");
         const employees={...Eresponse.data};
         const admin={...Aresponse.data};
 

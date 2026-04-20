@@ -17,7 +17,7 @@ const CreateTask = () => {
         e.preventDefault();
         let obj={...Newtask};
         obj={task_title:new_task,task_description:task_description,task_date:task_date,category:category,active:false,complete:false,failed:false,new_task:true};
-        const employees = await axios.get("http://localhost:3000/employees");
+        const employees = await axios.get("https://employees-management-system-backend.vercel.app/employees");
         console.log(employees.data)
         let id=0;
         let updateEmployee=null;
@@ -31,7 +31,7 @@ const CreateTask = () => {
         });
         console.log(employees.data);
 
-        await axios.put(`http://localhost:3000/employees/${id}`,updateEmployee);
+        await axios.put(`https://employees-management-system-backend.vercel.app/employees${id}`,updateEmployee);
         window.location.reload(); 
         setNewtask(obj);
         setNew_task("");

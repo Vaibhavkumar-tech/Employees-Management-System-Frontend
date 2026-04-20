@@ -40,7 +40,7 @@ const App = () => {
 }, []); */
 
 const fun = async () => {
-  const response = await axios.get("http://localhost:3000/loggeduser");
+  const response = await axios.get("https://employees-management-system-backend.vercel.app/loggeduser");
 
   const LoggedInUser = response.data[0];
 
@@ -56,8 +56,8 @@ fun();
 
   const postAdmin = async () => {
     setUser("admin");
-    await axios.delete("http://localhost:3000/loggeduser");
-    await axios.post("http://localhost:3000/loggeduser", {
+    await axios.delete("https://employees-management-system-backend.vercel.app/loggeduser");
+    await axios.post("https://employees-management-system-backend.vercel.app/loggeduser", {
       role: "admin",
       data: AuthData.userdata.admin
     });
@@ -66,8 +66,8 @@ fun();
 
   const postEmployee = async (data) => {
     setUser("employee");
-    await axios.delete("http://localhost:3000/loggeduser");
-    await axios.post("http://localhost:3000/loggeduser", {
+    await axios.delete("https://employees-management-system-backend.vercel.app/loggeduser");
+    await axios.post("https://employees-management-system-backend.vercel.app/loggeduser", {
       role: "employee",
       data: data
     });
