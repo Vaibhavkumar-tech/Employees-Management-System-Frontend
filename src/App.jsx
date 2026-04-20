@@ -78,7 +78,7 @@ useEffect(() => {
 
 
 
-  function LoginHandler(email,password){
+  const LoginHandler=((email,password)=>{
     if(AuthData && Object.values(AuthData.userdata.admin).find((a)=>{
       return email==a.email && password==a.password
     })){
@@ -101,7 +101,7 @@ useEffect(() => {
     else{
       alert("Invalid credentials");
     }
-  }
+  });
      
 /* useEffect(() => {
    const data = localStorage.getItem("employees");
