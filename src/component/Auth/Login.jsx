@@ -1,8 +1,7 @@
-import React, { use } from 'react'
-import { useState } from 'react'
+import React from 'react'
+import { useState } from 'react';
 
-const login = ({ LoginHandler }) => {
-
+const Login = () => {
     const [email,setEmail]=useState("");
     const [password, setPassword] = useState("");
 
@@ -41,4 +40,4 @@ const login = ({ LoginHandler }) => {
   )
 }
 
-export default login
+export default Login
