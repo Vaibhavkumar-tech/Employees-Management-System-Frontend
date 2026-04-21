@@ -13,7 +13,7 @@ const AllTask = (setProfile) => {
         setProfile.setProfile.setProfile("abc");
     }
   return (
-    <div className='h-full bg-gray-900 p-10 py-20 w-150 sm:w-300 md:300 lg:w-384 lg:h-173.5'>
+    <div className='h-full bg-gray-900 p-10 py-20 w-150 sm:w-300 md:300 lg:w-screen lg:h-screen'>
         <h2 className=' text-2xl font-bold -mt-10 mb-15 text-emerald-500 hover:text-emerald-900'>Employees Details</h2>
         <div>
             <div className='flex flex-row justify-between text-white rounded-2xl lg:w-300 w-100 lg:ml-40 mt-5 sm:w-150 lg:px-25 bg-emerald-500 h-15 items-center'>

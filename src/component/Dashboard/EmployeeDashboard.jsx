@@ -6,7 +6,7 @@ import ProfileCard from '../../others/ProfileCard'
 const EmployeeDashboard = ({data}) => {    
     
   return (
-    <div className='flex flex-col bg-[url(https://images.unsplash.com/photo-1774888912214-0c360aaa0752?q=80&w=1228&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover bg-center w-250 lg:w-full lg:flex-row md:flex-col sm:flex-col h-670 lg:h-173.5 sm:h-650'>
+    <div className='flex flex-col bg-[url(https://images.unsplash.com/photo-1774888912214-0c360aaa0752?q=80&w=1228&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover bg-center w-250 lg:flex-row md:flex-col sm:flex-col h-670 lg:w-screen lg:h-screen sm:h-650'>
       <div>
         <ProfileCard data={data}/>
       </div>
