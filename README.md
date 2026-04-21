@@ -22,8 +22,10 @@ It provides separate dashboards for Admin and Employees with a modern, responsiv
 🛠️ Tech Stack
 
 🎨 Frontend React.js ⚛️ Tailwind CSS 🌬️
+
 ⚙️ Backend Node.js 🟢 Express.js 🚂 🗄️ Database MongoDB 🍃
 
 🌐 Live Demo
 
-🔗 Add your deployed project link here
+🔗 Add your deployed project link here-https://employees-management-system-fronten-pi.vercel.app/
+
