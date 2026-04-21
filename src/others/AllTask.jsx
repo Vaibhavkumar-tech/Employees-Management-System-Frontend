@@ -35,10 +35,10 @@ const AllTask = (setProfile) => {
                             setProfile.setProfile.setProfileDetail(e);
                         }}
                         className='w-1/5 p-2 px-6  text-blue-400 font-bold transition transform active:scale-90 underline decoration-blue-500 cursor-pointer'>{e.firstName}</button>
-                        <h3 className='w-1/6 p-2 px-6  text-white font-bold '>{e.task_count.new_task}</h3>
-                        <h4 className='w-1/6 p-2 px-6  text-white font-bold '>{e.task_count.active}</h4>
-                        <h4 className='w-1/6 p-2 px-6  text-white font-bold '>{e.task_count.complete}</h4>
-                        <h4 className='w-1/6 p-2 px-6  text-white font-bold '>{e.task_count.failed}</h4>
+                        <h3 className='w-1/7 p-2 px-6  text-white font-bold '>{e.task_count.new_task}</h3>
+                        <h4 className='w-1/7 p-2 px-6  text-white font-bold '>{e.task_count.active}</h4>
+                        <h4 className='w-1/7 p-2 px-6  text-white font-bold '>{e.task_count.complete}</h4>
+                        <h4 className='w-1/7 p-2 px-6  text-white font-bold '>{e.task_count.failed}</h4>
                     </div>
                 )
             })}
