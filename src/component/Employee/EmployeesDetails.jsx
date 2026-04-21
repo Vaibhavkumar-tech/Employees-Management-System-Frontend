@@ -7,7 +7,7 @@ import MainEmployees from './MainEmployees'
 
 const EmployeesDetails = (data) => {
   return (
-    <div className='bg-gray-900 h-[70vh] w-full'>
+    <div className='bg-gray-900 h-192 w-full'>
         <HeaderEmployee data={data}/>
         <MainEmployees data={data}/>
     </div>

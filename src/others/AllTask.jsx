@@ -24,7 +24,7 @@ const AllTask = (setProfile) => {
                 <h4 className='w-1/6 p-2 px-6 text-white font-bold '>Failed</h4>
             </div>
         </div>
-        <div className='lg:overflow-auto h-90 w-357 lg:-ml-7'>
+        <div className='lg:overflow-auto h-90 w-357 lg:-ml-10'>
             {Object.values(data.userdata.employees).map(function(e,idx){
                 return(
                     <div key={idx} className='flex flex-row justify-between text-white rounded-2xl lg:w-300 w-100 sm:w-150 lg:ml-40 mt-5 lg:px-25 border-3 border-emerald-500 h-15 items-center hover:border-red-600 hover:h-20'>
