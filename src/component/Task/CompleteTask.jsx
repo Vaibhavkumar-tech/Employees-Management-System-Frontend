@@ -2,7 +2,7 @@ import React from 'react'
 
 const CompleteTask = ({data}) => {
   return (
-    <div className='w-80 bg-green-500 h-35 m-5 rounded-2xl hover:bg-black hover:scale-105 border-2 border-black hover:border-emerald-500 lg:w-[90%] md:w-120 sm:w-120'>
+    <div className='w-70 bg-green-500 h-35 m-5 rounded-2xl hover:bg-black hover:scale-105 border-2 border-black hover:border-emerald-500 lg:w-[90%] md:w-120 sm:w-120'>
         <nav className='flex flex-row justify-between m-3'>
             <h4 className='bg-red-600 h-7 mt-2 font-bold px-1 rounded-2xl '>{data.category}</h4>
             <h4 className='font-bold'>{data.task_date}</h4>

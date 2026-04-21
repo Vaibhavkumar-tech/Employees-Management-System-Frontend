@@ -12,7 +12,7 @@ const EmployeeDashboard = ({data}) => {
       </div>
       <div>
         <h2 className='text-3xl font-bold text-emerald-500 -mt-140 ml-5 sm:ml-10 lg:-ml-80 lg:mt-10 cursor:pointer hover:text-emerald-900'>Employee Panel</h2>
-        <div className='h-450 w-100 ml-20 mt-150 lg:mt-0 bg-black text-white lg:overflow-auto lg:w-274 md:w-[70%] sm:w-[60%] lg:h-150 sm:h-350'>
+        <div className='h-450 w-100 ml-20 mt-150 lg:mt-0 bg-black text-white lg:overflow-auto lg:w-[75%] md:w-[70%] sm:w-[60%] lg:h-screen sm:h-350'>
           <Header data={data}/>
           <TaskListNumber data={data.LoggedInUser}/>
           <TaskList data={data.LoggedInUser}/>
